@@ -4,8 +4,9 @@ import 'package:routefly/src/usecases/generate_routes.dart';
 
 Future<void> main(List<String> args) async {
   final flag = args.isEmpty ? '--generate' : args.first;
+  final appDirPath = args.length > 1 ? args[1] : './lib/app';
 
-  final appDir = Directory('./lib/app');
+  final appDir = Directory(appDirPath);
   final routeFile = File('${appDir.parent.path}/routes.g.dart');
 
   final generate = GenerateRoutes(appDir, routeFile);
