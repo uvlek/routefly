@@ -19,7 +19,8 @@ dev_dependencies:
     sdk: flutter
   flutterando_analysis: ^0.0.2
   full_coverage: ^1.0.0
-
+  yaml:
+  
 executables:
   routefly:
 
